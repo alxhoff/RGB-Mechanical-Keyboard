@@ -1,0 +1,491 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0170
+U 1 1 59A61FA9
+P 6400 4900
+F 0 "#PWR0170" H 6400 4650 50  0001 C CNN
+F 1 "GND" H 6400 4750 50  0000 C CNN
+F 2 "" H 6400 4900 50  0000 C CNN
+F 3 "" H 6400 4900 50  0000 C CNN
+	1    6400 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0171
+U 1 1 59A62171
+P 5750 5100
+F 0 "#PWR0171" H 5750 4850 50  0001 C CNN
+F 1 "GND" H 5750 4950 50  0000 C CNN
+F 2 "" H 5750 5100 50  0000 C CNN
+F 3 "" H 5750 5100 50  0000 C CNN
+	1    5750 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 4700 2    60   Input ~ 0
+SDA
+Text GLabel 6150 4800 2    60   Input ~ 0
+SCL
+$Comp
+L Memory_EEPROM:AT24CS02-SSHM U1
+U 1 1 59A607E0
+P 5750 4800
+F 0 "U1" H 5600 4550 60  0000 C CNN
+F 1 "AT24C02" H 6100 4475 60  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 5900 5450 60  0001 C CNN
+F 3 "" H 5750 4750 60  0000 C CNN
+	1    5750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RP2
+U 1 1 59A63412
+P 6100 3225
+F 0 "RP2" H 6100 3675 50  0000 C CNN
+F 1 "R_PACK4" H 6225 3525 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" H 6100 3225 50  0001 C CNN
+F 3 "" H 6100 3225 50  0000 C CNN
+	1    6100 3225
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 LCD2
+U 1 1 59BADB3C
+P 5575 2775
+F 0 "LCD2" V 5700 2775 60  0000 C CNN
+F 1 "SPI_spare" H 5575 3025 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 5575 2775 60  0001 C CNN
+F 3 "" H 5575 2775 60  0000 C CNN
+	1    5575 2775
+	0    1    -1   0   
+$EndComp
+Text GLabel 5475 3425 3    60   Input ~ 0
+SDA
+Text GLabel 5675 3450 3    60   Input ~ 0
+SCL
+$Comp
+L power:GND #PWR0175
+U 1 1 59BADB44
+P 5575 3425
+F 0 "#PWR0175" H 5575 3175 50  0001 C CNN
+F 1 "GND" H 5575 3275 50  0000 C CNN
+F 2 "" H 5575 3425 50  0000 C CNN
+F 3 "" H 5575 3425 50  0000 C CNN
+	1    5575 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4900 6150 4900
+Wire Wire Line
+	5250 4700 5350 4700
+Wire Wire Line
+	5150 4800 5350 4800
+Wire Wire Line
+	5050 4900 5350 4900
+Wire Wire Line
+	5475 2975 5475 3125
+Wire Notes Line
+	6900 5550 6900 1850
+Wire Notes Line
+	4600 1850 4600 5550
+Text Notes 5550 2050 0    60   ~ 0
+I2C Devices
+Wire Wire Line
+	6300 2925 6300 3025
+Connection ~ 6300 3025
+Wire Wire Line
+	6300 3025 6300 3125
+Connection ~ 6300 3125
+Wire Wire Line
+	6300 3125 6300 3225
+Connection ~ 6300 3225
+Wire Wire Line
+	6300 3225 6300 3325
+Wire Wire Line
+	5900 3025 5675 3025
+Wire Wire Line
+	5675 2975 5675 3025
+Connection ~ 5675 3025
+Wire Wire Line
+	5675 3025 5675 3450
+Wire Wire Line
+	5250 3975 5150 3975
+Wire Wire Line
+	5150 3975 5050 3975
+Connection ~ 5150 3975
+Text HLabel 9650 3675 2    50   Input ~ 0
+COL0
+Text HLabel 9650 3575 2    50   Input ~ 0
+COL1
+Text HLabel 9650 3475 2    50   Input ~ 0
+COL2
+Text HLabel 9650 3375 2    50   Input ~ 0
+COL3
+Text HLabel 9650 3275 2    50   Input ~ 0
+COL4
+Text HLabel 9650 3175 2    50   Input ~ 0
+COL5
+Text HLabel 9650 3075 2    50   Input ~ 0
+COL6
+Text HLabel 9650 2975 2    50   Input ~ 0
+COL7
+Text HLabel 9650 3775 2    50   Input ~ 0
+COL8
+Text HLabel 9650 3875 2    50   Input ~ 0
+COL9
+Text HLabel 9650 3975 2    50   Input ~ 0
+COL10
+Text HLabel 9650 4075 2    50   Input ~ 0
+COL11
+$Comp
+L 74xx:CD74HC4067SM U3
+U 1 1 5E9DDE6F
+P 9150 3675
+F 0 "U3" H 8525 4850 50  0000 C CNN
+F 1 "CD74HC4067SM" H 8725 4975 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 10200 2675 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 8800 4525 50  0001 C CNN
+	1    9150 3675
+	1    0    0    -1  
+$EndComp
+Text HLabel 9650 4175 2    50   Input ~ 0
+COL12
+Text HLabel 9650 4275 2    50   Input ~ 0
+COL13
+Text HLabel 9650 4375 2    50   Input ~ 0
+COL14
+$Comp
+L power:GND #PWR0186
+U 1 1 5EA7161F
+P 3125 3225
+F 0 "#PWR0186" H 3125 2975 50  0001 C CNN
+F 1 "GND" V 3125 3025 50  0000 C CNN
+F 2 "" H 3125 3225 50  0000 C CNN
+F 3 "" H 3125 3225 50  0000 C CNN
+	1    3125 3225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0187
+U 1 1 5EA78264
+P 3125 3125
+F 0 "#PWR0187" H 3125 2975 50  0001 C CNN
+F 1 "+5V" V 3125 3325 50  0000 C CNN
+F 2 "" H 3125 3125 50  0000 C CNN
+F 3 "" H 3125 3125 50  0000 C CNN
+	1    3125 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0188
+U 1 1 5EA7B3CB
+P 3125 3325
+F 0 "#PWR0188" H 3125 3175 50  0001 C CNN
+F 1 "+3V3" V 3125 3500 50  0000 C CNN
+F 2 "" H 3125 3325 50  0000 C CNN
+F 3 "" H 3125 3325 50  0000 C CNN
+	1    3125 3325
+	0    1    1    0   
+$EndComp
+Text Notes 2550 2600 0    60   ~ 0
+26 Pin FPC Connector
+Text Label 8650 3575 2    50   ~ 0
+MUX0
+Text Label 8650 3675 2    50   ~ 0
+MUX1
+Text Label 8650 3775 2    50   ~ 0
+MUX2
+Text Label 8650 3875 2    50   ~ 0
+MUX3
+Text HLabel 3125 3925 2    50   Input ~ 0
+USB_D-
+Text HLabel 3125 4025 2    50   Input ~ 0
+USB+D+
+Text Label 3125 5125 0    50   ~ 0
+MUX3
+Text Label 3125 5225 0    50   ~ 0
+MUX2
+Text Label 3125 5425 0    50   ~ 0
+MUX1
+Text Label 3125 5325 0    50   ~ 0
+MUX0
+Text GLabel 3125 3825 2    60   Input ~ 0
+SCL
+Text GLabel 3125 3725 2    60   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR0165
+U 1 1 59A0C431
+P 3125 5525
+F 0 "#PWR0165" H 3125 5275 50  0001 C CNN
+F 1 "GND" V 3125 5325 50  0000 C CNN
+F 2 "" H 3125 5525 50  0000 C CNN
+F 3 "" H 3125 5525 50  0000 C CNN
+	1    3125 5525
+	0    -1   -1   0   
+$EndComp
+Text HLabel 3125 4125 2    60   Input ~ 0
+RGB4
+Text HLabel 3125 4225 2    60   Input ~ 0
+RGB3
+Text HLabel 3125 4325 2    60   Input ~ 0
+RGB2
+Text HLabel 3125 4425 2    60   Input ~ 0
+RGB1
+Text HLabel 3125 4525 2    60   Input ~ 0
+RGB0
+Text HLabel 3125 3625 2    60   Input ~ 0
+LED2
+Text HLabel 3125 3525 2    60   Input ~ 0
+LED1
+Text HLabel 3125 3425 2    60   Input ~ 0
+LED0
+Text HLabel 3125 5025 2    60   Input ~ 0
+ROW4
+Text HLabel 3125 4925 2    60   Input ~ 0
+ROW3
+Text HLabel 3125 4825 2    60   Input ~ 0
+ROW2
+Text HLabel 3125 4725 2    60   Input ~ 0
+ROW1
+Text HLabel 3125 4625 2    60   Input ~ 0
+ROW0
+$Comp
+L Connector_Generic:Conn_01x26 J1
+U 1 1 5EAC1DE2
+P 2925 4325
+F 0 "J1" H 2843 5742 50  0000 C CNN
+F 1 "Conn_01x26" H 2843 5651 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal" H 2925 4325 50  0001 C CNN
+F 3 "~" H 2925 4325 50  0001 C CNN
+	1    2925 4325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L FullKeyboardV1-cache:+3.3V #PWR0168
+U 1 1 616DAE3A
+P 5150 3975
+F 0 "#PWR0168" H 5150 3825 50  0001 C CNN
+F 1 "+3.3V" H 5165 4148 50  0000 C CNN
+F 2 "" H 5150 3975 50  0001 C CNN
+F 3 "" H 5150 3975 50  0001 C CNN
+	1    5150 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L FullKeyboardV1-cache:+3.3V #PWR0169
+U 1 1 616E0152
+P 6300 2925
+F 0 "#PWR0169" H 6300 2775 50  0001 C CNN
+F 1 "+3.3V" H 6315 3098 50  0000 C CNN
+F 2 "" H 6300 2925 50  0001 C CNN
+F 3 "" H 6300 2925 50  0001 C CNN
+	1    6300 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L FullKeyboardV1-cache:+3.3V #PWR0174
+U 1 1 616E0DE4
+P 5375 2975
+F 0 "#PWR0174" H 5375 2825 50  0001 C CNN
+F 1 "+3.3V" H 5390 3148 50  0000 C CNN
+F 2 "" H 5375 2975 50  0001 C CNN
+F 3 "" H 5375 2975 50  0001 C CNN
+	1    5375 2975
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0176
+U 1 1 616E35FA
+P 3125 5625
+F 0 "#PWR0176" H 3125 5475 50  0001 C CNN
+F 1 "+3V3" V 3125 5800 50  0000 C CNN
+F 2 "" H 3125 5625 50  0000 C CNN
+F 3 "" H 3125 5625 50  0000 C CNN
+	1    3125 5625
+	0    1    1    0   
+$EndComp
+$Comp
+L FullKeyboardV1-cache:+3.3V #PWR0189
+U 1 1 616E66AE
+P 9150 2675
+F 0 "#PWR0189" H 9150 2525 50  0001 C CNN
+F 1 "+3.3V" H 9165 2848 50  0000 C CNN
+F 2 "" H 9150 2675 50  0001 C CNN
+F 3 "" H 9150 2675 50  0001 C CNN
+	1    9150 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0193
+U 1 1 616E6981
+P 9150 4775
+F 0 "#PWR0193" H 9150 4525 50  0001 C CNN
+F 1 "GND" H 9150 4625 50  0000 C CNN
+F 2 "" H 9150 4775 50  0000 C CNN
+F 3 "" H 9150 4775 50  0000 C CNN
+	1    9150 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L FullKeyboardV1-cache:+3.3V #PWR0194
+U 1 1 616E6CB4
+P 7800 3175
+F 0 "#PWR0194" H 7800 3025 50  0001 C CNN
+F 1 "+3.3V" V 7815 3303 50  0000 L CNN
+F 2 "" H 7800 3175 50  0001 C CNN
+F 3 "" H 7800 3175 50  0001 C CNN
+	1    7800 3175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0195
+U 1 1 616ED7B3
+P 7800 3425
+F 0 "#PWR0195" H 7800 3175 50  0001 C CNN
+F 1 "GND" H 7800 3275 50  0000 C CNN
+F 2 "" H 7800 3425 50  0000 C CNN
+F 3 "" H 7800 3425 50  0000 C CNN
+	1    7800 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 616EDE9E
+P 8050 3425
+F 0 "JP2" H 8050 3630 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8050 3539 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8050 3425 50  0001 C CNN
+F 3 "~" H 8050 3425 50  0001 C CNN
+	1    8050 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 616EE650
+P 8050 3175
+F 0 "JP1" H 8050 3380 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 8050 3289 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8050 3175 50  0001 C CNN
+F 3 "~" H 8050 3175 50  0001 C CNN
+	1    8050 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3425 8425 3425
+Wire Wire Line
+	8425 3425 8425 3175
+Wire Wire Line
+	8425 3175 8200 3175
+Wire Wire Line
+	7800 3175 7900 3175
+Wire Wire Line
+	7800 3425 7900 3425
+Wire Wire Line
+	8425 3175 8650 3175
+Connection ~ 8425 3175
+$Comp
+L power:GND #PWR0196
+U 1 1 616F50E6
+P 8450 4275
+F 0 "#PWR0196" H 8450 4025 50  0001 C CNN
+F 1 "GND" H 8450 4125 50  0000 C CNN
+F 2 "" H 8450 4275 50  0000 C CNN
+F 3 "" H 8450 4275 50  0000 C CNN
+	1    8450 4275
+	0    1    1    0   
+$EndComp
+$Comp
+L FullKeyboardV1-cache:+3.3V #PWR0156
+U 1 1 6175CC78
+P 5750 4500
+F 0 "#PWR0156" H 5750 4350 50  0001 C CNN
+F 1 "+3.3V" H 5765 4673 50  0000 C CNN
+F 2 "" H 5750 4500 50  0001 C CNN
+F 3 "" H 5750 4500 50  0001 C CNN
+	1    5750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 2975 5575 3425
+Wire Wire Line
+	5925 3125 5900 3125
+Connection ~ 5900 3125
+Wire Wire Line
+	5900 3125 5475 3125
+Wire Wire Line
+	5475 3425 5475 3125
+Connection ~ 5475 3125
+$Comp
+L Device:R_Pack04 RP1
+U 1 1 6176F0FC
+P 5050 4325
+F 0 "RP1" H 5050 4775 50  0000 C CNN
+F 1 "R_PACK4" H 5175 4625 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" H 5050 4325 50  0001 C CNN
+F 3 "" H 5050 4325 50  0000 C CNN
+	1    5050 4325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 3975 5050 4125
+Wire Wire Line
+	5150 4125 5150 3975
+Wire Wire Line
+	5250 4125 5250 3975
+Wire Wire Line
+	5150 4800 5150 4525
+Wire Wire Line
+	5250 4700 5250 4525
+Wire Wire Line
+	5050 4525 5050 4900
+$Comp
+L Device:C_Small C2
+U 1 1 6179ADC4
+P 9425 2675
+F 0 "C2" V 9196 2675 50  0000 C CNN
+F 1 "C_Small" V 9287 2675 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9425 2675 50  0001 C CNN
+F 3 "~" H 9425 2675 50  0001 C CNN
+	1    9425 2675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9325 2675 9150 2675
+Connection ~ 9150 2675
+$Comp
+L power:GND #PWR0197
+U 1 1 6179D51F
+P 9525 2675
+F 0 "#PWR0197" H 9525 2425 50  0001 C CNN
+F 1 "GND" V 9530 2547 50  0000 R CNN
+F 2 "" H 9525 2675 50  0001 C CNN
+F 3 "" H 9525 2675 50  0001 C CNN
+	1    9525 2675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 617ABD7C
+P 8550 4275
+F 0 "R4" V 8354 4275 50  0000 C CNN
+F 1 "10K" V 8445 4275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8550 4275 50  0001 C CNN
+F 3 "~" H 8550 4275 50  0001 C CNN
+	1    8550 4275
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

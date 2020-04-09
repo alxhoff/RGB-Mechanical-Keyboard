@@ -1,0 +1,231 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keyboard:BluePill_STM32F103C U1
+U 1 1 61986373
+P 5200 3625
+F 0 "U1" H 5225 2152 50  0000 C CNN
+F 1 "BluePill_STM32F103C" H 5225 2061 50  0000 C CNN
+F 2 "keyboard:BluePill_STM32F103C" H 5250 2025 50  0001 C CNN
+F 3 "www.rogerclark.net" H 5200 2125 50  0001 C CNN
+	1    5200 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x26 J1
+U 1 1 6198690D
+P 8275 3950
+F 0 "J1" H 8355 3942 50  0000 L CNN
+F 1 "Conn_01x26" H 8355 3851 50  0000 L CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal" H 8275 3950 50  0001 C CNN
+F 3 "~" H 8275 3950 50  0001 C CNN
+	1    8275 3950
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 61987491
+P 8075 2650
+F 0 "#PWR0101" H 8075 2500 50  0001 C CNN
+F 1 "+5V" V 8090 2778 50  0000 L CNN
+F 2 "" H 8075 2650 50  0001 C CNN
+F 3 "" H 8075 2650 50  0001 C CNN
+	1    8075 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61987C8E
+P 8075 2750
+F 0 "#PWR0102" H 8075 2500 50  0001 C CNN
+F 1 "GND" V 8080 2622 50  0000 R CNN
+F 2 "" H 8075 2750 50  0001 C CNN
+F 3 "" H 8075 2750 50  0001 C CNN
+	1    8075 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61987E75
+P 8075 5050
+F 0 "#PWR0103" H 8075 4800 50  0001 C CNN
+F 1 "GND" V 8080 4922 50  0000 R CNN
+F 2 "" H 8075 5050 50  0001 C CNN
+F 3 "" H 8075 5050 50  0001 C CNN
+	1    8075 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 61989535
+P 8075 5150
+F 0 "#PWR0104" H 8075 5000 50  0001 C CNN
+F 1 "+3.3V" V 8090 5278 50  0000 L CNN
+F 2 "" H 8075 5150 50  0001 C CNN
+F 3 "" H 8075 5150 50  0001 C CNN
+	1    8075 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 61989834
+P 8075 2850
+F 0 "#PWR0105" H 8075 2700 50  0001 C CNN
+F 1 "+3.3V" V 8090 2978 50  0000 L CNN
+F 2 "" H 8075 2850 50  0001 C CNN
+F 3 "" H 8075 2850 50  0001 C CNN
+	1    8075 2850
+	0    -1   -1   0   
+$EndComp
+Text Label 8075 2950 2    50   ~ 0
+LED0
+Text Label 8075 3050 2    50   ~ 0
+LED1
+Text Label 8075 3150 2    50   ~ 0
+LED2
+Text Label 8075 3250 2    50   ~ 0
+SDA
+Text Label 8075 3350 2    50   ~ 0
+SCL
+Text Label 8075 3450 2    50   ~ 0
+USB_D-
+Text Label 8075 3550 2    50   ~ 0
+USB_D+
+Text Label 8075 3650 2    50   ~ 0
+RGB4
+Text Label 8075 3750 2    50   ~ 0
+RGB3
+Text Label 8075 3850 2    50   ~ 0
+RGB2
+Text Label 8075 3950 2    50   ~ 0
+RGB1
+Text Label 8075 4050 2    50   ~ 0
+RGB0
+$Comp
+L power:+5V #PWR0106
+U 1 1 6198F155
+P 6100 3125
+F 0 "#PWR0106" H 6100 2975 50  0001 C CNN
+F 1 "+5V" V 6115 3253 50  0000 L CNN
+F 2 "" H 6100 3125 50  0001 C CNN
+F 3 "" H 6100 3125 50  0001 C CNN
+	1    6100 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 6198F4F3
+P 6100 2925
+F 0 "#PWR0107" H 6100 2775 50  0001 C CNN
+F 1 "+3.3V" V 6115 3053 50  0000 L CNN
+F 2 "" H 6100 2925 50  0001 C CNN
+F 3 "" H 6100 2925 50  0001 C CNN
+	1    6100 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 6198F844
+P 6100 3025
+F 0 "#PWR0108" H 6100 2775 50  0001 C CNN
+F 1 "GND" V 6105 2897 50  0000 R CNN
+F 2 "" H 6100 3025 50  0001 C CNN
+F 3 "" H 6100 3025 50  0001 C CNN
+	1    6100 3025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 6198FAE4
+P 4350 4825
+F 0 "#PWR0109" H 4350 4575 50  0001 C CNN
+F 1 "GND" V 4355 4697 50  0000 R CNN
+F 2 "" H 4350 4825 50  0001 C CNN
+F 3 "" H 4350 4825 50  0001 C CNN
+	1    4350 4825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 4825 4350 4725
+Connection ~ 4350 4825
+Text Label 6100 4025 0    50   ~ 0
+USB_D+
+Text Label 6100 4125 0    50   ~ 0
+USB_D-
+Text Label 6100 3425 0    50   ~ 0
+SDA
+Text Label 6100 3525 0    50   ~ 0
+SCL
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 61991833
+P 4350 4625
+F 0 "#PWR0110" H 4350 4475 50  0001 C CNN
+F 1 "+3.3V" V 4365 4753 50  0000 L CNN
+F 2 "" H 4350 4625 50  0001 C CNN
+F 3 "" H 4350 4625 50  0001 C CNN
+	1    4350 4625
+	0    -1   -1   0   
+$EndComp
+Text Label 4350 3225 2    50   ~ 0
+RGB0
+Text Label 4350 3125 2    50   ~ 0
+RGB2
+Text Label 4350 3025 2    50   ~ 0
+RGB4
+Text Label 4350 3325 2    50   ~ 0
+LED0
+Text Label 4350 3425 2    50   ~ 0
+LED1
+Text Label 4350 3525 2    50   ~ 0
+LED2
+Text Label 4350 3625 2    50   ~ 0
+ROW0
+Text Label 4350 3725 2    50   ~ 0
+ROW1
+Text Label 4350 3825 2    50   ~ 0
+ROW2
+Text Label 4350 3925 2    50   ~ 0
+ROW3
+Text Label 4350 4025 2    50   ~ 0
+ROW4
+Text Label 4350 4125 2    50   ~ 0
+MUX3
+Text Label 4350 4225 2    50   ~ 0
+MUX2
+Text Label 4350 4325 2    50   ~ 0
+MUX0
+Text Label 4350 4425 2    50   ~ 0
+MUX1
+Text Label 8075 4950 2    50   ~ 0
+MUX1
+Text Label 8075 4850 2    50   ~ 0
+MUX0
+Text Label 8075 4750 2    50   ~ 0
+MUX2
+Text Label 8075 4650 2    50   ~ 0
+MUX3
+Text Label 8075 4550 2    50   ~ 0
+ROW4
+Text Label 8075 4450 2    50   ~ 0
+ROW3
+Text Label 8075 4350 2    50   ~ 0
+ROW2
+Text Label 8075 4250 2    50   ~ 0
+ROW1
+Text Label 8075 4150 2    50   ~ 0
+ROW0
+$EndSCHEMATC

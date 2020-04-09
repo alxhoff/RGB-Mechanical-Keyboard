@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name FullKeyboardV1-cache)(type Legacy)(uri ${KIPRJMOD}/FullKeyboardV1-cache.lib)(options "")(descr ""))
+  (lib (name keyboard)(type Legacy)(uri ${KIPRJMOD}/keyboard.lib)(options "")(descr ""))
+)
