@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -190,14 +190,6 @@ Text Label 2475 4950 2    60   ~ 0
 ROW3
 Text Label 2475 5050 2    60   ~ 0
 ROW4
-$Sheet
-S 4175 4100 700  300 
-U 586925EB
-F0 "PowerSheet" 60
-F1 "PowerSchematic.sch" 60
-F2 "USB_D-" I L 4175 4300 50 
-F3 "USB_D+" I L 4175 4175 50 
-$EndSheet
 $Comp
 L keyboard:LED_SWITCH SW1
 U 1 1 59B67F7C
@@ -917,7 +909,7 @@ $Comp
 L Device:D_Small D42
 U 1 1 59B874AB
 P 8600 -2450
-F 0 "D42" H 8500 -2550 50  00000100 L CNN
+F 0 "D42" H 8500 -2550 50  0001 L CNN
 F 1 "D_Small" H 8450 -2530 50  0001 L CNN
 F 2 "Diode_SMD:D_SOD-123" V 8600 -2450 50  0001 C CNN
 F 3 "" V 8600 -2450 50  0000 C CNN
@@ -4822,10 +4814,6 @@ F29 "COL14" I L 2675 4550 60
 F30 "USB_D-" I R 3525 4300 50 
 F31 "USB+D+" I R 3525 4175 50 
 $EndSheet
-Wire Wire Line
-	3525 4175 4175 4175
-Wire Wire Line
-	4175 4300 3525 4300
 Connection ~ 8900 2850
 Connection ~ 7850 2850
 Wire Wire Line
@@ -5241,4 +5229,160 @@ F 3 "" H 3800 1700 50  0000 C CNN
 	1    3800 1700
 	-1   0    0    1   
 $EndComp
+$Sheet
+S 5875 4925 625  925 
+U 5E9ACD38
+F0 "usb_hub" 50
+F1 "usb_hub.sch" 50
+F2 "Dout+" I L 5875 5700 50 
+F3 "Dout-" I L 5875 5575 50 
+F4 "Din+" I L 5875 5075 50 
+F5 "Din-" I L 5875 5200 50 
+F6 "VBUS" I R 6500 5450 50 
+F7 "3V3" I R 6500 5275 50 
+$EndSheet
+$Comp
+L power:+5V #PWR0153
+U 1 1 5EA5A8A9
+P 6500 5450
+F 0 "#PWR0153" H 6500 5300 50  0001 C CNN
+F 1 "+5V" V 6515 5578 50  0000 L CNN
+F 2 "" H 6500 5450 50  0001 C CNN
+F 3 "" H 6500 5450 50  0001 C CNN
+	1    6500 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L FullKeyboardV1-cache:+3.3V #PWR0154
+U 1 1 5EA5BADF
+P 6500 5275
+F 0 "#PWR0154" H 6500 5125 50  0001 C CNN
+F 1 "+3.3V" H 6515 5448 50  0000 C CNN
+F 2 "" H 6500 5275 50  0001 C CNN
+F 3 "" H 6500 5275 50  0001 C CNN
+	1    6500 5275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4025 5725 4025 5575
+$Comp
+L Jumper:SolderJumper_2_Bridged JP7
+U 1 1 5ED36A74
+P 5500 5075
+F 0 "JP7" H 5500 4942 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5500 4941 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5500 5075 50  0001 C CNN
+F 3 "~" H 5500 5075 50  0001 C CNN
+	1    5500 5075
+	1    0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP5
+U 1 1 5ED36DFE
+P 5050 5200
+F 0 "JP5" H 5050 5313 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5050 5314 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5050 5200 50  0001 C CNN
+F 3 "~" H 5050 5200 50  0001 C CNN
+	1    5050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP8
+U 1 1 5ED372C9
+P 5500 5575
+F 0 "JP8" H 5500 5688 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5500 5689 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5500 5575 50  0001 C CNN
+F 3 "~" H 5500 5575 50  0001 C CNN
+	1    5500 5575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP6
+U 1 1 5ED376F0
+P 5050 5700
+F 0 "JP6" H 5050 5813 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5050 5814 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5050 5700 50  0001 C CNN
+F 3 "~" H 5050 5700 50  0001 C CNN
+	1    5050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5ED38136
+P 4025 5375
+F 0 "JP3" V 4025 5443 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 4070 5443 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4025 5375 50  0001 C CNN
+F 3 "~" H 4025 5375 50  0001 C CNN
+	1    4025 5375
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5ED38895
+P 4175 5000
+F 0 "JP4" V 4175 5068 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 4220 5068 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4175 5000 50  0001 C CNN
+F 3 "~" H 4175 5000 50  0001 C CNN
+	1    4175 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4175 4175 4175 4800
+Wire Wire Line
+	3525 4175 4175 4175
+Wire Wire Line
+	3525 4300 4025 4300
+Wire Wire Line
+	4175 4800 4450 4800
+Wire Wire Line
+	4450 4800 4450 5075
+Wire Wire Line
+	4450 5075 5350 5075
+Connection ~ 4175 4800
+Wire Wire Line
+	4175 4800 4175 4850
+Wire Wire Line
+	4025 4300 4025 5200
+Wire Wire Line
+	4900 5200 4025 5200
+Connection ~ 4025 5200
+Wire Wire Line
+	4025 5200 4025 5225
+Wire Wire Line
+	4175 5150 4175 5700
+Wire Wire Line
+	3650 5850 4175 5850
+Wire Wire Line
+	5875 5075 5650 5075
+Wire Wire Line
+	5200 5200 5875 5200
+Wire Wire Line
+	5650 5575 5875 5575
+Wire Wire Line
+	5875 5700 5200 5700
+Wire Wire Line
+	5350 5575 4025 5575
+Wire Wire Line
+	4025 5575 4025 5525
+Connection ~ 4025 5575
+Wire Wire Line
+	4900 5700 4175 5700
+Connection ~ 4175 5700
+Wire Wire Line
+	4175 5700 4175 5850
+$Sheet
+S 2950 5625 700  300 
+U 586925EB
+F0 "PowerSheet" 60
+F1 "PowerSchematic.sch" 60
+F2 "USB_D-" I R 3650 5725 50 
+F3 "USB_D+" I R 3650 5850 50 
+$EndSheet
+Wire Wire Line
+	4025 5725 3650 5725
 $EndSCHEMATC
