@@ -961,28 +961,6 @@ F 3 "" V 10400 -2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard:LED_SWITCH SW4
-U 1 1 59B87F65
-P 150 -1900
-F 0 "SW4" H 50  -1700 60  0001 C CNN
-F 1 "LShift" H 150 -1825 60  0000 C CNN
-F 2 "keyboard:RGB_CHERRY_PCB_200H" H 60  -1870 60  0001 C CNN
-F 3 "" H 60  -1870 60  0000 C CNN
-	1    150  -1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D4
-U 1 1 59B87F6C
-P 500 -1900
-F 0 "D4" H 400 -2000 50  0001 L CNN
-F 1 "D_Small" H 350 -1980 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 500 -1900 50  0001 C CNN
-F 3 "" V 500 -1900 50  0000 C CNN
-	1    500  -1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L keyboard:LED_SWITCH SW13
 U 1 1 59B87F83
 P 1950 -1900
@@ -1324,26 +1302,15 @@ F 3 "" V 12200 -2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard:LED_SWITCH SW57
-U 1 1 59C13CD1
-P 10950 -1900
-F 0 "SW57" H 10850 -1700 60  0001 C CNN
-F 1 "RShift" H 10950 -1825 60  0000 C CNN
-F 2 "keyboard:RGB_CHERRY_PCB_175H" H 10860 -1870 60  0001 C CNN
-F 3 "" H 10860 -1870 60  0000 C CNN
-	1    10950 -1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D_Small D57
 U 1 1 59C13CD8
-P 11300 -1900
-F 0 "D57" H 11200 -2000 50  0001 L CNN
-F 1 "D_Small" H 11150 -1980 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 11300 -1900 50  0001 C CNN
-F 3 "" V 11300 -1900 50  0000 C CNN
-	1    11300 -1900
-	1    0    0    -1  
+P 11150 -975
+F 0 "D57" H 11050 -1075 50  0001 L CNN
+F 1 "D_Small" H 11000 -1055 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 11150 -975 50  0001 C CNN
+F 3 "" V 11150 -975 50  0000 C CNN
+	1    11150 -975
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:D_Small D58
@@ -1370,12 +1337,12 @@ $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 59CAE5B9
-P 400 -1625
-F 0 "#PWR05" H 400 -1875 50  0001 C CNN
-F 1 "GND" H 400 -1775 50  0000 C CNN
-F 2 "" H 400 -1625 50  0000 C CNN
-F 3 "" H 400 -1625 50  0000 C CNN
-	1    400  -1625
+P 525 925
+F 0 "#PWR05" H 525 675 50  0001 C CNN
+F 1 "GND" H 525 775 50  0000 C CNN
+F 2 "" H 525 925 50  0000 C CNN
+F 3 "" H 525 925 50  0000 C CNN
+	1    525  925 
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1786,17 +1753,6 @@ F 3 "" H 10300 -1625 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR055
-U 1 1 59CD763D
-P 11200 -1625
-F 0 "#PWR055" H 11200 -1875 50  0001 C CNN
-F 1 "GND" H 11200 -1775 50  0000 C CNN
-F 2 "" H 11200 -1625 50  0000 C CNN
-F 3 "" H 11200 -1625 50  0000 C CNN
-	1    11200 -1625
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR056
 U 1 1 59CDE37B
 P 2200 -3275
@@ -2040,12 +1996,12 @@ $EndComp
 $Comp
 L Device:C_Small C6
 U 1 1 59A02B24
-P 150 -1625
-F 0 "C6" H 160 -1555 50  0000 L CNN
-F 1 "C_Small" H 160 -1705 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 150 -1625 50  0001 C CNN
-F 3 "" H 150 -1625 50  0000 C CNN
-	1    150  -1625
+P 175 925
+F 0 "C6" H 185 995 50  0000 L CNN
+F 1 "C_Small" H 185 845 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 175 925 50  0001 C CNN
+F 3 "" H 175 925 50  0000 C CNN
+	1    175  925 
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2447,12 +2403,12 @@ $EndComp
 $Comp
 L Device:C_Small C59
 U 1 1 59A138AB
-P 10950 -1625
-F 0 "C59" H 10960 -1555 50  0000 L CNN
-F 1 "C_Small" H 10960 -1705 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10950 -1625 50  0001 C CNN
-F 3 "" H 10950 -1625 50  0000 C CNN
-	1    10950 -1625
+P 11075 275
+F 0 "C59" H 11085 345 50  0000 L CNN
+F 1 "C_Small" H 11085 195 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11075 275 50  0001 C CNN
+F 3 "" H 11075 275 50  0000 C CNN
+	1    11075 275 
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2832,34 +2788,34 @@ $EndComp
 $Comp
 L Device:D_Small D56
 U 1 1 59BCFB9D
-P 12200 -1900
-F 0 "D56" H 12100 -2000 50  0000 L CNN
-F 1 "D_Small" H 12050 -1980 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 12200 -1900 50  0001 C CNN
-F 3 "" V 12200 -1900 50  0000 C CNN
-	1    12200 -1900
-	1    0    0    -1  
+P 11700 -975
+F 0 "D56" H 11600 -1075 50  0000 L CNN
+F 1 "D_Small" H 11550 -1055 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 11700 -975 50  0001 C CNN
+F 3 "" V 11700 -975 50  0000 C CNN
+	1    11700 -975
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0149
 U 1 1 59BCFBA3
-P 12100 -1625
-F 0 "#PWR0149" H 12100 -1875 50  0001 C CNN
-F 1 "GND" H 12100 -1775 50  0000 C CNN
-F 2 "" H 12100 -1625 50  0000 C CNN
-F 3 "" H 12100 -1625 50  0000 C CNN
-	1    12100 -1625
+P 11300 425
+F 0 "#PWR0149" H 11300 175 50  0001 C CNN
+F 1 "GND" H 11300 275 50  0000 C CNN
+F 2 "" H 11300 425 50  0000 C CNN
+F 3 "" H 11300 425 50  0000 C CNN
+	1    11300 425 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C68
 U 1 1 59BCFBA9
-P 11850 -1625
-F 0 "C68" H 11860 -1555 50  0000 L CNN
-F 1 "C_Small" H 11860 -1705 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 11850 -1625 50  0001 C CNN
-F 3 "" H 11850 -1625 50  0000 C CNN
-	1    11850 -1625
+P 10950 425
+F 0 "C68" H 10960 495 50  0000 L CNN
+F 1 "C_Small" H 10960 345 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10950 425 50  0001 C CNN
+F 3 "" H 10950 425 50  0000 C CNN
+	1    10950 425 
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2988,17 +2944,6 @@ Wire Wire Line
 Wire Wire Line
 	12500 -3275 12650 -3275
 $Comp
-L keyboard:LED_SWITCH SW56
-U 1 1 59BCFB97
-P 11850 -1900
-F 0 "SW56" H 11750 -1700 60  0001 C CNN
-F 1 "Up" H 11825 -1800 60  0000 C CNN
-F 2 "keyboard:RGB_CHERRY_PCB_100H" H 11760 -1870 60  0001 C CNN
-F 3 "" H 11760 -1870 60  0000 C CNN
-	1    11850 -1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L keyboard:LED_SWITCH SW61
 U 1 1 59C13CC2
 P 11850 -2450
@@ -3031,13 +2976,6 @@ F 3 "" H 11760 -3520 60  0000 C CNN
 	1    11850 -3550
 	1    0    0    -1  
 $EndComp
-Connection ~ 12300 -1900
-Wire Wire Line
-	11600 -1750 11600 -1625
-Wire Wire Line
-	11600 -1625 11750 -1625
-Wire Wire Line
-	12100 -1825 12500 -1825
 Connection ~ 12300 -2450
 Wire Wire Line
 	11950 -2175 12100 -2175
@@ -3048,16 +2986,9 @@ Wire Wire Line
 	11600 -2300 11600 -2175
 Wire Wire Line
 	11600 -2175 11750 -2175
-Wire Wire Line
-	11600 -2450 11600 -2650
-Connection ~ 11600 -2650
-Wire Wire Line
-	11600 -2650 12500 -2650
 Connection ~ 12300 -3000
 Wire Wire Line
 	12300 -3000 12300 -2450
-Wire Wire Line
-	12300 -2450 12300 -1900
 Wire Wire Line
 	12100 -2375 12500 -2375
 Wire Wire Line
@@ -3075,11 +3006,6 @@ Wire Wire Line
 	11600 -2850 11600 -2725
 Wire Wire Line
 	11600 -2725 11750 -2725
-Wire Wire Line
-	11600 -3000 11600 -3200
-Connection ~ 11600 -3200
-Wire Wire Line
-	11600 -3200 12500 -3200
 Wire Wire Line
 	12300 -3550 12300 -3000
 Wire Wire Line
@@ -3107,23 +3033,6 @@ Wire Wire Line
 Connection ~ 11600 -3750
 Wire Wire Line
 	11600 -3750 12500 -3750
-Connection ~ 11400 -1900
-Wire Wire Line
-	11050 -1625 11200 -1625
-Wire Wire Line
-	11200 -1750 11200 -1625
-Connection ~ 11200 -1625
-Wire Wire Line
-	11200 -1825 11600 -1825
-Wire Wire Line
-	10700 -1750 10700 -1625
-Wire Wire Line
-	10700 -1625 10850 -1625
-Wire Wire Line
-	10700 -1900 10700 -2100
-Connection ~ 10700 -2100
-Wire Wire Line
-	10700 -2100 11600 -2100
 Connection ~ 11400 -3000
 Wire Wire Line
 	11200 -2725 11200 -2850
@@ -3136,8 +3045,6 @@ Wire Wire Line
 	10700 -2725 10850 -2725
 Wire Wire Line
 	11200 -2925 11600 -2925
-Wire Wire Line
-	11400 -3000 11400 -1900
 Wire Wire Line
 	11400 -3550 11400 -3000
 Wire Wire Line
@@ -3163,8 +3070,6 @@ $EndComp
 Wire Wire Line
 	10700 -3000 10700 -3200
 Connection ~ 10700 -3200
-Wire Wire Line
-	10700 -3200 11600 -3200
 Wire Wire Line
 	10700 -3550 10700 -3750
 Connection ~ 10700 -3750
@@ -3192,16 +3097,12 @@ Wire Wire Line
 	9800 -1900 9800 -2100
 Connection ~ 9800 -2100
 Wire Wire Line
-	9800 -2100 10700 -2100
-Wire Wire Line
 	9800 -2300 9800 -2175
 Wire Wire Line
 	9800 -2175 9950 -2175
 Wire Wire Line
 	9800 -2450 9800 -2650
 Connection ~ 9800 -2650
-Wire Wire Line
-	9800 -2650 11600 -2650
 Connection ~ 10500 -3000
 Wire Wire Line
 	10150 -2725 10300 -2725
@@ -3259,8 +3160,6 @@ Wire Wire Line
 	9400 -1825 9800 -1825
 Wire Wire Line
 	9400 -2375 9800 -2375
-Wire Wire Line
-	10300 -1825 10700 -1825
 Wire Wire Line
 	10300 -2375 11600 -2375
 Wire Wire Line
@@ -3341,11 +3240,6 @@ Wire Wire Line
 Connection ~ 8900 -3200
 Wire Wire Line
 	8900 -3200 9800 -3200
-Wire Wire Line
-	11600 -1900 11600 -2100
-Connection ~ 11600 -2100
-Wire Wire Line
-	11600 -2100 12500 -2100
 Wire Wire Line
 	9400 -2925 9800 -2925
 Wire Wire Line
@@ -3559,8 +3453,6 @@ Wire Wire Line
 	3850 -3275 4000 -3275
 Wire Wire Line
 	4000 -3275 4000 -3400
-Wire Wire Line
-	-350 -2100 -100 -2100
 Wire Wire Line
 	600  -3550 600  -3000
 $Comp
@@ -3936,17 +3828,9 @@ Connection ~ 1500 -2450
 Wire Wire Line
 	-350 -3750 -100 -3750
 Connection ~ 600  -2450
-Wire Wire Line
-	600  -2450 600  -1900
 Connection ~ 600  -3000
 Wire Wire Line
 	600  -3000 600  -2450
-Connection ~ 600  -1900
-Wire Wire Line
-	250  -1625 400  -1625
-Wire Wire Line
-	400  -1625 400  -1750
-Connection ~ 400  -1625
 Wire Wire Line
 	250  -2175 400  -2175
 Wire Wire Line
@@ -4041,12 +3925,6 @@ Wire Wire Line
 Wire Wire Line
 	800  -2725 950  -2725
 Wire Wire Line
-	-100 -1750 -100 -1625
-Wire Wire Line
-	-100 -1625 50   -1625
-Wire Wire Line
-	400  -1825 1700 -1825
-Wire Wire Line
 	50   -2175 -100 -2175
 Wire Wire Line
 	-100 -2175 -100 -2300
@@ -4071,11 +3949,6 @@ Wire Wire Line
 Connection ~ -100 -2650
 Wire Wire Line
 	-100 -2650 800  -2650
-Wire Wire Line
-	-100 -1900 -100 -2100
-Connection ~ -100 -2100
-Wire Wire Line
-	-100 -2100 1700 -2100
 Wire Wire Line
 	10500 -3000 10500 -2450
 Wire Wire Line
@@ -4107,15 +3980,14 @@ Connection ~ -100 -2850
 $Comp
 L FullKeyboardV1-cache:+3.3V #PWR0104
 U 1 1 67E29AAB
-P -100 -1750
-F 0 "#PWR0104" H -100 -1900 50  0001 C CNN
-F 1 "+3.3V" V -85 -1622 50  0000 L CNN
-F 2 "" H -100 -1750 50  0001 C CNN
-F 3 "" H -100 -1750 50  0001 C CNN
-	1    -100 -1750
+P 75 925
+F 0 "#PWR0104" H 75  775 50  0001 C CNN
+F 1 "+3.3V" V 90  1053 50  0000 L CNN
+F 2 "" H 75  925 50  0001 C CNN
+F 3 "" H 75  925 50  0001 C CNN
+	1    75   925 
 	0    -1   -1   0   
 $EndComp
-Connection ~ -100 -1750
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 67E2ADAC
@@ -4658,29 +4530,16 @@ F 3 "" H 10700 -2850 50  0000 C CNN
 $EndComp
 Connection ~ 10700 -2850
 $Comp
-L power:+3.3V #PWR0166
-U 1 1 67E721B9
-P 10700 -1750
-F 0 "#PWR0166" H 10700 -1900 50  0001 C CNN
-F 1 "+3.3V" V 10625 -1675 50  0000 C CNN
-F 2 "" H 10700 -1750 50  0000 C CNN
-F 3 "" H 10700 -1750 50  0000 C CNN
-	1    10700 -1750
-	0    -1   -1   0   
-$EndComp
-Connection ~ 10700 -1750
-$Comp
 L power:+3.3V #PWR0167
 U 1 1 67E751E8
-P 11600 -1750
-F 0 "#PWR0167" H 11600 -1900 50  0001 C CNN
-F 1 "+3.3V" V 11525 -1675 50  0000 C CNN
-F 2 "" H 11600 -1750 50  0000 C CNN
-F 3 "" H 11600 -1750 50  0000 C CNN
-	1    11600 -1750
+P 10850 425
+F 0 "#PWR0167" H 10850 275 50  0001 C CNN
+F 1 "+3.3V" V 10775 500 50  0000 C CNN
+F 2 "" H 10850 425 50  0000 C CNN
+F 3 "" H 10850 425 50  0000 C CNN
+	1    10850 425 
 	0    -1   -1   0   
 $EndComp
-Connection ~ 11600 -1750
 $Comp
 L power:+3.3V #PWR0172
 U 1 1 67E761EE
@@ -4767,11 +4626,6 @@ F 3 "" H 12500 -1750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 12500 -1750
-Wire Wire Line
-	11950 -1625 12100 -1625
-Wire Wire Line
-	12100 -1625 12100 -1750
-Connection ~ 12100 -1625
 Wire Wire Line
 	8325 5125 8425 5125
 Wire Wire Line
@@ -4905,7 +4759,7 @@ F 3 "" H 8250 2800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 -2450 1500 -1450
+	1500 -2450 1500 -1750
 $Comp
 L Device:C_Small C33
 U 1 1 59A0EA4A
@@ -5000,19 +4854,13 @@ $EndComp
 Wire Wire Line
 	8650 2000 8650 1825
 Wire Wire Line
-	11400 -1900 11400 -1400
-Wire Wire Line
 	10500 -1900 10500 -1400
 Wire Wire Line
 	9600 -1900 9600 -1375
 Wire Wire Line
 	2400 -1900 2400 -1425
 Wire Wire Line
-	600  -1900 600  -1450
-Wire Wire Line
 	6000 -1900 6000 -1375
-Wire Wire Line
-	12300 -1900 12300 -1400
 Wire Wire Line
 	8850 2000 8850 1825
 Wire Wire Line
@@ -5385,4 +5233,207 @@ F3 "USB_D+" I R 3650 5850 50
 $EndSheet
 Wire Wire Line
 	4025 5725 3650 5725
+$Comp
+L keyboard:double_key SW9
+U 1 1 5E9CE107
+P 11350 -375
+F 0 "SW9" H 11978 -354 50  0000 L CNN
+F 1 "double_key" H 11978 -445 50  0000 L CNN
+F 2 "keyboard:RGB_CHERRY_SHIFT_RIGHT_2.0" H 11300 175 50  0001 C CNN
+F 3 "" H 11300 175 50  0001 C CNN
+	1    11350 -375
+	1    0    0    -1  
+$EndComp
+Text Notes 10800 -225 0    50   ~ 0
+Right Shift & Up
+Wire Wire Line
+	10950 175  10950 275 
+Wire Wire Line
+	10950 275  10975 275 
+Wire Wire Line
+	11400 -3000 11400 -1950
+Wire Wire Line
+	12300 -2450 12300 -1950
+Wire Wire Line
+	10850 175  10850 425 
+Wire Wire Line
+	10850 175  10950 175 
+Connection ~ 10850 175 
+Connection ~ 10950 175 
+Wire Wire Line
+	11175 275  11200 275 
+Wire Wire Line
+	11200 275  11200 175 
+Wire Wire Line
+	11050 425  11300 425 
+Wire Wire Line
+	11300 425  11300 175 
+Connection ~ 11200 175 
+Connection ~ 11300 175 
+Wire Wire Line
+	11200 175  11300 175 
+Connection ~ 11300 425 
+Connection ~ 10850 425 
+Wire Wire Line
+	9800 -2100 11050 -2100
+Wire Wire Line
+	11050 -875 11050 -2100
+Connection ~ 11050 -2100
+Wire Wire Line
+	11050 -2100 11600 -2100
+Wire Wire Line
+	11600 -875 11600 -2100
+Connection ~ 11600 -2100
+Wire Wire Line
+	11600 -2100 12500 -2100
+Wire Wire Line
+	11550 175  11550 650 
+Wire Wire Line
+	11550 650  10550 650 
+Wire Wire Line
+	10550 650  10550 -1825
+Wire Wire Line
+	10550 -1825 10300 -1825
+Wire Wire Line
+	11750 175  11650 175 
+Wire Wire Line
+	11850 175  12100 175 
+Wire Wire Line
+	12100 175  12100 -1825
+Wire Wire Line
+	12100 -1825 12500 -1825
+Wire Wire Line
+	11700 -1075 11700 -1950
+Wire Wire Line
+	11700 -1950 12300 -1950
+Connection ~ 12300 -1950
+Wire Wire Line
+	12300 -1950 12300 -1400
+Wire Wire Line
+	11150 -1075 11150 -1950
+Wire Wire Line
+	11150 -1950 11400 -1950
+Connection ~ 11400 -1950
+Wire Wire Line
+	11400 -1950 11400 -1400
+Wire Wire Line
+	10700 -3200 11600 -3200
+Wire Wire Line
+	11600 -3200 12500 -3200
+Connection ~ 11600 -3200
+Wire Wire Line
+	11600 -3000 11600 -3200
+Wire Wire Line
+	9800 -2650 11600 -2650
+Wire Wire Line
+	11600 -2650 12500 -2650
+Connection ~ 11600 -2650
+Wire Wire Line
+	11600 -2450 11600 -2650
+$Comp
+L keyboard:double_key SW4
+U 1 1 5F3A6D8D
+P 575 100
+F 0 "SW4" H 1203 121 50  0000 L CNN
+F 1 "double_key" H 1203 30  50  0000 L CNN
+F 2 "keyboard:RGB_CHERRY_SHIFT_ROW_LEFT" H 525 650 50  0001 C CNN
+F 3 "" H 525 650 50  0001 C CNN
+	1    575  100 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  -2450 600  -1750
+$Comp
+L Device:D_Small D77
+U 1 1 5E9D67F1
+P 925 -500
+F 0 "D77" H 825 -600 50  0001 L CNN
+F 1 "D_Small" H 775 -580 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 925 -500 50  0001 C CNN
+F 3 "" V 925 -500 50  0000 C CNN
+	1    925  -500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C79
+U 1 1 5EA4B9AA
+P 300 775
+F 0 "C79" H 310 845 50  0000 L CNN
+F 1 "C_Small" H 310 695 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 300 775 50  0001 C CNN
+F 3 "" H 300 775 50  0000 C CNN
+	1    300  775 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	75   925  75   650 
+Wire Wire Line
+	175  650  175  775 
+Wire Wire Line
+	175  775  200  775 
+Wire Wire Line
+	400  775  425  775 
+Wire Wire Line
+	425  775  425  650 
+Wire Wire Line
+	525  650  525  925 
+Wire Wire Line
+	525  925  275  925 
+Connection ~ 525  925 
+Wire Wire Line
+	425  650  525  650 
+Connection ~ 425  650 
+Connection ~ 525  650 
+Wire Wire Line
+	175  650  75   650 
+Connection ~ 175  650 
+Connection ~ 75   650 
+Connection ~ 75   925 
+Wire Wire Line
+	-350 -2100 275  -2100
+Wire Wire Line
+	275  -400 275  -2100
+Connection ~ 275  -2100
+Wire Wire Line
+	825  -400 825  -2100
+Wire Wire Line
+	275  -2100 825  -2100
+Connection ~ 825  -2100
+Wire Wire Line
+	825  -2100 1700 -2100
+Wire Wire Line
+	925  -600 925  -1750
+Wire Wire Line
+	925  -1750 1500 -1750
+Connection ~ 1500 -1750
+Wire Wire Line
+	1500 -1750 1500 -1450
+Wire Wire Line
+	375  -1750 600  -1750
+Connection ~ 600  -1750
+Wire Wire Line
+	600  -1750 600  -1450
+$Comp
+L Device:D_Small D4
+U 1 1 59B87F6C
+P 375 -500
+F 0 "D4" H 275 -600 50  0001 L CNN
+F 1 "D_Small" H 225 -580 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 375 -500 50  0001 C CNN
+F 3 "" V 375 -500 50  0000 C CNN
+	1    375  -500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	375  -600 375  -1750
+Wire Wire Line
+	1700 -1825 1550 -1825
+Wire Wire Line
+	1550 -1825 1550 775 
+Wire Wire Line
+	1550 775  1075 775 
+Wire Wire Line
+	1075 775  1075 650 
+Wire Wire Line
+	975  650  875  650 
 $EndSCHEMATC
