@@ -8,9 +8,10 @@ On the to-do list is to add this sort of customizability to more of the keyboard
 
 # TODO for V2.1
 
-- Make second-from-bottom row more customizable
-- Add a usb 2.0 hub and a couple of usb-c ports to the keyboard.
-- Add jumpers to configure rgb rows, for example, daisy chaining multiple rows to reduce required pin count
-- STM32F411 "Blackpill" control board
-- Add port for connecting a joystick for mouse functionality
-- Add switch for toggling 'BOOT' protocol, ie. device can recognize that it should send 8 byte BOOT compatible HID reports
+- [x] Make second-from-bottom row more customizable
+- [x] Add a usb 2.0 hub and a couple of usb-c ports to the keyboard.
+- [X] Add jumpers to configure rgb rows, for example, daisy chaining multiple rows to reduce required pin count
+- [ ] STM32F411 "Blackpill" control board
+- [ ] Add port for connecting a joystick for mouse functionality
+- [ ] Add switch for toggling 'BOOT' protocol, ie. device can recognize that it should send 8 byte BOOT compatible HID reports
+- [ ] Update existing control boards to handle 30 pin ribbon cable

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -61,32 +61,10 @@ F 3 "" H 6100 3225 50  0000 C CNN
 	1    6100 3225
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 LCD2
-U 1 1 59BADB3C
-P 5575 2775
-F 0 "LCD2" V 5700 2775 60  0000 C CNN
-F 1 "SPI_spare" H 5575 3025 60  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 5575 2775 60  0001 C CNN
-F 3 "" H 5575 2775 60  0000 C CNN
-	1    5575 2775
-	0    1    -1   0   
-$EndComp
 Text GLabel 5475 3425 3    60   Input ~ 0
 SDA
 Text GLabel 5675 3450 3    60   Input ~ 0
 SCL
-$Comp
-L power:GND #PWR0175
-U 1 1 59BADB44
-P 5575 3425
-F 0 "#PWR0175" H 5575 3175 50  0001 C CNN
-F 1 "GND" H 5575 3275 50  0000 C CNN
-F 2 "" H 5575 3425 50  0000 C CNN
-F 3 "" H 5575 3425 50  0000 C CNN
-	1    5575 3425
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6400 4900 6150 4900
 Wire Wire Line
@@ -95,8 +73,6 @@ Wire Wire Line
 	5150 4800 5350 4800
 Wire Wire Line
 	5050 4900 5350 4900
-Wire Wire Line
-	5475 2975 5475 3125
 Wire Notes Line
 	6900 5550 6900 1850
 Wire Notes Line
@@ -116,9 +92,6 @@ Wire Wire Line
 	6300 3225 6300 3325
 Wire Wire Line
 	5900 3025 5675 3025
-Wire Wire Line
-	5675 2975 5675 3025
-Connection ~ 5675 3025
 Wire Wire Line
 	5675 3025 5675 3450
 Wire Wire Line
@@ -264,17 +237,6 @@ ROW1
 Text HLabel 3125 4625 2    60   Input ~ 0
 ROW0
 $Comp
-L Connector_Generic:Conn_01x26 J1
-U 1 1 5EAC1DE2
-P 2925 4325
-F 0 "J1" H 2843 5742 50  0000 C CNN
-F 1 "Conn_01x26" H 2843 5651 50  0000 C CNN
-F 2 "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal" H 2925 4325 50  0001 C CNN
-F 3 "~" H 2925 4325 50  0001 C CNN
-	1    2925 4325
-	-1   0    0    -1  
-$EndComp
-$Comp
 L FullKeyboardV1-cache:+3.3V #PWR0168
 U 1 1 616DAE3A
 P 5150 3975
@@ -295,17 +257,6 @@ F 2 "" H 6300 2925 50  0001 C CNN
 F 3 "" H 6300 2925 50  0001 C CNN
 	1    6300 2925
 	1    0    0    -1  
-$EndComp
-$Comp
-L FullKeyboardV1-cache:+3.3V #PWR0174
-U 1 1 616E0DE4
-P 5375 2975
-F 0 "#PWR0174" H 5375 2825 50  0001 C CNN
-F 1 "+3.3V" H 5390 3148 50  0000 C CNN
-F 2 "" H 5375 2975 50  0001 C CNN
-F 3 "" H 5375 2975 50  0001 C CNN
-	1    5375 2975
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3V3 #PWR0176
@@ -420,15 +371,12 @@ F 3 "" H 5750 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5575 2975 5575 3425
-Wire Wire Line
 	5925 3125 5900 3125
 Connection ~ 5900 3125
 Wire Wire Line
 	5900 3125 5475 3125
 Wire Wire Line
 	5475 3425 5475 3125
-Connection ~ 5475 3125
 $Comp
 L Device:R_Pack04 RP1
 U 1 1 6176F0FC
@@ -488,4 +436,56 @@ F 3 "~" H 8550 4275 50  0001 C CNN
 	1    8550 4275
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x30 J1
+U 1 1 5E9DC884
+P 2925 4525
+F 0 "J1" H 2843 6142 50  0000 C CNN
+F 1 "Conn_01x30" H 2843 6051 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal" H 2925 4525 50  0001 C CNN
+F 3 "~" H 2925 4525 50  0001 C CNN
+	1    2925 4525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 5E9E6B8A
+P 4100 6550
+F 0 "J6" H 4180 6542 50  0000 L CNN
+F 1 "Conn_01x04" H 4180 6451 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal" H 4100 6550 50  0001 C CNN
+F 3 "~" H 4100 6550 50  0001 C CNN
+	1    4100 6550
+	1    0    0    -1  
+$EndComp
+Text Label 3900 6650 2    50   ~ 0
+MOUSE_X
+Text Label 3900 6750 2    50   ~ 0
+MOUSE_Y
+$Comp
+L power:+3V3 #PWR0166
+U 1 1 5E9E9956
+P 3900 6550
+F 0 "#PWR0166" H 3900 6400 50  0001 C CNN
+F 1 "+3V3" V 3900 6725 50  0000 C CNN
+F 2 "" H 3900 6550 50  0000 C CNN
+F 3 "" H 3900 6550 50  0000 C CNN
+	1    3900 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0222
+U 1 1 5E9E9F7B
+P 3900 6450
+F 0 "#PWR0222" H 3900 6200 50  0001 C CNN
+F 1 "GND" V 3900 6250 50  0000 C CNN
+F 2 "" H 3900 6450 50  0000 C CNN
+F 3 "" H 3900 6450 50  0000 C CNN
+	1    3900 6450
+	0    1    1    0   
+$EndComp
+Text Label 3125 5725 0    50   ~ 0
+MOUSE_X
+Text Label 3125 5825 0    50   ~ 0
+MOUSE_Y
 $EndSCHEMATC
