@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L keyboard:BluePill_STM32F103C U1
+L bluepill_control_board-rescue:BluePill_STM32F103C-keyboard U1
 U 1 1 61986373
 P 5200 3625
 F 0 "U1" H 5225 2152 50  0000 C CNN
@@ -23,17 +23,6 @@ F 2 "keyboard:BluePill_STM32F103C" H 5250 2025 50  0001 C CNN
 F 3 "www.rogerclark.net" H 5200 2125 50  0001 C CNN
 	1    5200 3625
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x26 J1
-U 1 1 6198690D
-P 8275 3950
-F 0 "J1" H 8355 3942 50  0000 L CNN
-F 1 "Conn_01x26" H 8355 3851 50  0000 L CNN
-F 2 "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal" H 8275 3950 50  0001 C CNN
-F 3 "~" H 8275 3950 50  0001 C CNN
-	1    8275 3950
-	1    0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR0101
@@ -202,13 +191,13 @@ Text Label 4350 3925 2    50   ~ 0
 ROW3
 Text Label 4350 4025 2    50   ~ 0
 ROW4
-Text Label 4350 4125 2    50   ~ 0
+Text Label 6100 3225 0    50   ~ 0
 MUX3
-Text Label 4350 4225 2    50   ~ 0
+Text Label 6100 3325 0    50   ~ 0
 MUX2
-Text Label 4350 4325 2    50   ~ 0
+Text Label 6100 3625 0    50   ~ 0
 MUX0
-Text Label 4350 4425 2    50   ~ 0
+Text Label 6100 3725 0    50   ~ 0
 MUX1
 Text Label 8075 4950 2    50   ~ 0
 MUX1
@@ -228,4 +217,23 @@ Text Label 8075 4250 2    50   ~ 0
 ROW1
 Text Label 8075 4150 2    50   ~ 0
 ROW0
+$Comp
+L Connector_Generic:Conn_01x30 J1
+U 1 1 5EA05AAB
+P 8275 3750
+F 0 "J1" H 8193 2025 50  0000 C CNN
+F 1 "Conn_01x30" H 8193 2116 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal" H 8275 3750 50  0001 C CNN
+F 3 "~" H 8275 3750 50  0001 C CNN
+	1    8275 3750
+	1    0    0    1   
+$EndComp
+Text Label 8075 2550 2    50   ~ 0
+MOUSE_X
+Text Label 8075 2450 2    50   ~ 0
+MOUSE_Y
+Text Label 4350 4225 2    50   ~ 0
+MOUSE_Y
+Text Label 4350 4125 2    50   ~ 0
+MOUSE_X
 $EndSCHEMATC

@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name keyboard)(type Legacy)(uri /home/alxhoff/git/GitHub/STM32-Mechanical-Keyboard/hardware/Libraries/keyboard-components.lib)(options "")(descr ""))
+  (lib (name bluepill_control_board-rescue)(type Legacy)(uri ${KIPRJMOD}/bluepill_control_board-rescue.lib)(options "")(descr ""))
 )
