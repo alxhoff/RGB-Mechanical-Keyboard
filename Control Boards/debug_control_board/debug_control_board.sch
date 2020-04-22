@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x26 J9
-U 1 1 6198690D
-P 6225 3950
-F 0 "J9" H 6305 3942 50  0000 L CNN
-F 1 "Conn_01x26" H 6305 3851 50  0000 L CNN
-F 2 "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal" H 6225 3950 50  0001 C CNN
-F 3 "~" H 6225 3950 50  0001 C CNN
-	1    6225 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0101
 U 1 1 61987491
 P 6025 2750
@@ -121,17 +110,6 @@ Text Label 6025 4950 2    50   ~ 0
 MUX0
 Text Label 6025 5050 2    50   ~ 0
 MUX1
-$Comp
-L Connector_Generic:Conn_01x26 J10
-U 1 1 5E8E9B0F
-P 7425 3950
-F 0 "J10" H 7505 3942 50  0000 L CNN
-F 1 "Conn_01x26" H 7505 3851 50  0000 L CNN
-F 2 "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal" H 7425 3950 50  0001 C CNN
-F 3 "~" H 7425 3950 50  0001 C CNN
-	1    7425 3950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0106
 U 1 1 5E8E9B19
@@ -427,4 +405,88 @@ Text Label 4375 5000 0    50   ~ 0
 LED1
 Text Label 4375 4900 0    50   ~ 0
 LED2
+$Comp
+L Connector_Generic:Conn_01x30 J11
+U 1 1 5EA08939
+P 6225 4150
+F 0 "J11" H 6305 4142 50  0000 L CNN
+F 1 "Conn_01x30" H 6305 4051 50  0000 L CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal" H 6225 4150 50  0001 C CNN
+F 3 "~" H 6225 4150 50  0001 C CNN
+	1    6225 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x30 J12
+U 1 1 5EA09A24
+P 7425 4150
+F 0 "J12" H 7505 4142 50  0000 L CNN
+F 1 "Conn_01x30" H 7505 4051 50  0000 L CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal" H 7425 4150 50  0001 C CNN
+F 3 "~" H 7425 4150 50  0001 C CNN
+	1    7425 4150
+	1    0    0    -1  
+$EndComp
+Text Label 6025 5350 2    50   ~ 0
+MOUSE_X
+Text Label 7225 5350 2    50   ~ 0
+MOUSE_X
+Text Label 7225 5450 2    50   ~ 0
+MOUSE_Y
+Text Label 6025 5450 2    50   ~ 0
+MOUSE_Y
+Text Label 6025 5550 2    50   ~ 0
+BOOT_SWITCH
+Text Label 7225 5550 2    50   ~ 0
+BOOT_SWITCH
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 5EA13C5A
+P 3375 5600
+F 0 "J9" H 3455 5642 50  0000 L CNN
+F 1 "Conn_01x03" H 3455 5551 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3375 5600 50  0001 C CNN
+F 3 "~" H 3375 5600 50  0001 C CNN
+	1    3375 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5EA1451B
+P 4550 5550
+F 0 "J10" H 4630 5542 50  0000 L CNN
+F 1 "Conn_01x02" H 4630 5451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4550 5550 50  0001 C CNN
+F 3 "~" H 4550 5550 50  0001 C CNN
+	1    4550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5EA14DDB
+P 3175 5700
+F 0 "#PWR0115" H 3175 5450 50  0001 C CNN
+F 1 "GND" V 3180 5572 50  0000 R CNN
+F 2 "" H 3175 5700 50  0001 C CNN
+F 3 "" H 3175 5700 50  0001 C CNN
+	1    3175 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5EA152DE
+P 4350 5650
+F 0 "#PWR0116" H 4350 5400 50  0001 C CNN
+F 1 "GND" V 4355 5522 50  0000 R CNN
+F 2 "" H 4350 5650 50  0001 C CNN
+F 3 "" H 4350 5650 50  0001 C CNN
+	1    4350 5650
+	0    1    1    0   
+$EndComp
+Text Label 3175 5600 2    50   ~ 0
+MOUSE_Y
+Text Label 3175 5500 2    50   ~ 0
+MOUSE_X
+Text Label 4350 5550 2    50   ~ 0
+BOOT_SWITCH
 $EndSCHEMATC
