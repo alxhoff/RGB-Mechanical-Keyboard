@@ -236,4 +236,8 @@ Text Label 4350 4225 2    50   ~ 0
 MOUSE_Y
 Text Label 4350 4125 2    50   ~ 0
 MOUSE_X
+Text Label 8075 2350 2    50   ~ 0
+BOOT_SWITCH
+Text Label 6100 3825 0    50   ~ 0
+BOOT_SWITCH
 $EndSCHEMATC
