@@ -16,4 +16,4 @@ On the to-do list is to add this sort of customizability to more of the keyboard
 - [X] Add switch for toggling 'BOOT' protocol, ie. device can recognize that it should send 8 byte BOOT compatible HID reports
 - [X] Update existing control boards to handle 30 pin ribbon cable
 - [X] Add hotswappable sockets
-- [ ] Make mounting holes elongated to allow for less precision during case fabrication
+- [X] Make mounting holes elongated to allow for less precision during case fabrication
